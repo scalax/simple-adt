@@ -1,0 +1,29 @@
+@(TupleSize: Int)
+
+package net.scalax.simple.adt
+package instance
+
+class CoProduct1[T1](foldImpl: One[T1]) extends One[T1] with ADTFoldApplyImpl1[Nothing, T1] { CoProductSelf =>
+    override def value: T1 = foldImpl.value
+    @@inline def fold[TargetOther0](param1: T1 => TargetOther0): TargetOther0 = param1(CoProductSelf.value)
+    @@inline override def fold1[TargetOther0](param1: T1 => TargetOther0): TargetOther0 = CoProductSelf.fold[TargetOther0](param1)
+}
+
+@TypeName1(i2: Int) = {
+    @if(i2 > 1) {
+        Successor[T@i2, @{TypeName1(i2 - 1)}]
+    } else {
+        One[T@i2]
+    }
+}
+
+@for(i1 <- 2 to TupleSize) {
+
+    class CoProduct@{i1}[@for(i2 <- 1 to i1) { T@i2, }](instance: @TypeName1(i1)) extends @{TypeName1(i1)} { CoProductSelf =>
+        override def tailFold[Target](func1: T@i1 => Target, func2: @TypeName1(i1-1) => Target): Target =
+            instance.tailFold(func1, func2)
+
+        def fold[Target](@for(i2 <- 1 to i1) { param@{i2}: T@i2 => Target, }): Target = ???
+    }
+
+}

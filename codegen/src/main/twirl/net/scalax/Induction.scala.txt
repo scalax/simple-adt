@@ -1,3 +1,0 @@
-@(TupleSize: Int)
-
-// TODO

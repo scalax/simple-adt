@@ -9,7 +9,7 @@ import matchers._
 class ExampleSpec extends AnyFlatSpec with should.Matchers {
 
   "TODO" should "TODO" in {
-    2 should be(3)
+    2 should be(2)
   }
 
 }

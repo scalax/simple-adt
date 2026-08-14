@@ -1,11 +1,12 @@
-package net.scalax
+package net.scalax.simple.adt.codegen
 
 import java.nio.file.Paths
 
 object CodegenAction {
   def main(arr: Array[String]): Unit = {
     val pathImpl = Paths.get("").toAbsolutePath
-    val pathRoot = os.Path(pathImpl) / "adt" / "src" /"main"/ "codegen" / "scala" / "net" / "scalax" / "simple" / "induction"
-    os.write.over(target = pathRoot / "Induction.scala", data = net.scalax.txt.Induction(22).body, createFolders = true)
+    val pathRoot = os.Path(pathImpl) / "adt" / "src" / "main" / "scala" / "codegen" / "net" / "scalax" / "simple" / "induction"
+    os.write.over(target = pathRoot / "CoProductX.scala", data = net.scalax.txt.CoProductX(22).body, createFolders = true)
+    os.write.over(target = pathRoot / "FoldApply.scala", data = net.scalax.txt.FoldApply(22).body, createFolders = true)
   }
 }

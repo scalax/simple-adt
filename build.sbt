@@ -4,7 +4,7 @@ lazy val codegen = (project in (file("") / "codegen"))
   .enablePlugins(SbtTwirl)
   .settings(scalaVersion := scalaV.v213, libraryDependencies ++= libScalax.`os-lib`.value, scalafmtOnCompile := true)
 
-lazy val induction = crossProject(JSPlatform, JVMPlatform)
+lazy val adt = crossProject(JSPlatform, JVMPlatform)
   .crossType(CrossType.Pure)
   .in(file("") / "adt")
   .settings(
@@ -13,8 +13,9 @@ lazy val induction = crossProject(JSPlatform, JVMPlatform)
     scalafmtOnCompile  := true,
     version            := "0.0.1-M27",
     publishTo          := localStaging.value,
-    name               := "simple-induction",
-    libraryDependencies ++= libScalax.`scalatest`.value
+    name               := "simple-adt",
+    libraryDependencies ++= libScalax.`scalatest`.value.map(_ % Test),
+    libraryDependencies ++= libScalax.`simple-induction`.value
   )
   .settings(sonaSettings *)
 
