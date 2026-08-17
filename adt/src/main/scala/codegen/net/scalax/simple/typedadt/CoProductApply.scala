@@ -1,10 +1,10 @@
 package net.scalax.simple.adt
-package instance
+package typedadt
 
-import typedadt._
+import instance._
 
-trait CoProductApply1[T1] extends CoProductApplyHelper1[T1] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct1Apply[T1] extends CoProduct1ApplyHelper[T1] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       One[AdtFunction[Target, T1]]
     ]
@@ -19,8 +19,8 @@ trait CoProductApply1[T1] extends CoProductApplyHelper1[T1] { Self =>
     new CoProduct1(adtCv.value)
 }
 
-trait CoProductApply2[T1, T2] extends CoProductApplyHelper2[T1, T2] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct2Apply[T1, T2] extends CoProduct2ApplyHelper[T1, T2] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -43,8 +43,8 @@ trait CoProductApply2[T1, T2] extends CoProductApplyHelper2[T1, T2] { Self =>
     new CoProduct2(adtCv.value)
 }
 
-trait CoProductApply3[T1, T2, T3] extends CoProductApplyHelper3[T1, T2, T3] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct3Apply[T1, T2, T3] extends CoProduct3ApplyHelper[T1, T2, T3] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -79,8 +79,8 @@ trait CoProductApply3[T1, T2, T3] extends CoProductApplyHelper3[T1, T2, T3] { Se
     new CoProduct3(adtCv.value)
 }
 
-trait CoProductApply4[T1, T2, T3, T4] extends CoProductApplyHelper4[T1, T2, T3, T4] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct4Apply[T1, T2, T3, T4] extends CoProduct4ApplyHelper[T1, T2, T3, T4] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -124,8 +124,8 @@ trait CoProductApply4[T1, T2, T3, T4] extends CoProductApplyHelper4[T1, T2, T3, 
     new CoProduct4(adtCv.value)
 }
 
-trait CoProductApply5[T1, T2, T3, T4, T5] extends CoProductApplyHelper5[T1, T2, T3, T4, T5] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct5Apply[T1, T2, T3, T4, T5] extends CoProduct5ApplyHelper[T1, T2, T3, T4, T5] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -181,8 +181,8 @@ trait CoProductApply5[T1, T2, T3, T4, T5] extends CoProductApplyHelper5[T1, T2, 
     new CoProduct5(adtCv.value)
 }
 
-trait CoProductApply6[T1, T2, T3, T4, T5, T6] extends CoProductApplyHelper6[T1, T2, T3, T4, T5, T6] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct6Apply[T1, T2, T3, T4, T5, T6] extends CoProduct6ApplyHelper[T1, T2, T3, T4, T5, T6] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -247,8 +247,8 @@ trait CoProductApply6[T1, T2, T3, T4, T5, T6] extends CoProductApplyHelper6[T1, 
     new CoProduct6(adtCv.value)
 }
 
-trait CoProductApply7[T1, T2, T3, T4, T5, T6, T7] extends CoProductApplyHelper7[T1, T2, T3, T4, T5, T6, T7] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct7Apply[T1, T2, T3, T4, T5, T6, T7] extends CoProduct7ApplyHelper[T1, T2, T3, T4, T5, T6, T7] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -327,8 +327,8 @@ trait CoProductApply7[T1, T2, T3, T4, T5, T6, T7] extends CoProductApplyHelper7[
     new CoProduct7(adtCv.value)
 }
 
-trait CoProductApply8[T1, T2, T3, T4, T5, T6, T7, T8] extends CoProductApplyHelper8[T1, T2, T3, T4, T5, T6, T7, T8] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct8Apply[T1, T2, T3, T4, T5, T6, T7, T8] extends CoProduct8ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -417,8 +417,8 @@ trait CoProductApply8[T1, T2, T3, T4, T5, T6, T7, T8] extends CoProductApplyHelp
     new CoProduct8(adtCv.value)
 }
 
-trait CoProductApply9[T1, T2, T3, T4, T5, T6, T7, T8, T9] extends CoProductApplyHelper9[T1, T2, T3, T4, T5, T6, T7, T8, T9] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct9Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9] extends CoProduct9ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -517,9 +517,9 @@ trait CoProductApply9[T1, T2, T3, T4, T5, T6, T7, T8, T9] extends CoProductApply
     new CoProduct9(adtCv.value)
 }
 
-trait CoProductApply10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10] extends CoProductApplyHelper10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10] {
+trait CoProduct10Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10] extends CoProduct10ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10] {
   Self =>
-  def target[Target](target: Target)(implicit
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -628,9 +628,9 @@ trait CoProductApply10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10] extends CoProduc
     new CoProduct10(adtCv.value)
 }
 
-trait CoProductApply11[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11]
-    extends CoProductApplyHelper11[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct11Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11]
+    extends CoProduct11ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -749,9 +749,9 @@ trait CoProductApply11[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11]
     new CoProduct11(adtCv.value)
 }
 
-trait CoProductApply12[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12]
-    extends CoProductApplyHelper12[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct12Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12]
+    extends CoProduct12ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -880,9 +880,9 @@ trait CoProductApply12[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12]
     new CoProduct12(adtCv.value)
 }
 
-trait CoProductApply13[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]
-    extends CoProductApplyHelper13[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct13Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]
+    extends CoProduct13ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -1021,9 +1021,9 @@ trait CoProductApply13[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]
     new CoProduct13(adtCv.value)
 }
 
-trait CoProductApply14[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]
-    extends CoProductApplyHelper14[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct14Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]
+    extends CoProduct14ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -1172,9 +1172,9 @@ trait CoProductApply14[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T
     new CoProduct14(adtCv.value)
 }
 
-trait CoProductApply15[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15]
-    extends CoProductApplyHelper15[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct15Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15]
+    extends CoProduct15ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -1333,9 +1333,9 @@ trait CoProductApply15[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T
     new CoProduct15(adtCv.value)
 }
 
-trait CoProductApply16[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16]
-    extends CoProductApplyHelper16[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct16Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16]
+    extends CoProduct16ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -1504,9 +1504,9 @@ trait CoProductApply16[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T
     new CoProduct16(adtCv.value)
 }
 
-trait CoProductApply17[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17]
-    extends CoProductApplyHelper17[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct17Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17]
+    extends CoProduct17ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -1685,9 +1685,9 @@ trait CoProductApply17[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T
     new CoProduct17(adtCv.value)
 }
 
-trait CoProductApply18[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18]
-    extends CoProductApplyHelper18[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct18Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18]
+    extends CoProduct18ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -1876,9 +1876,9 @@ trait CoProductApply18[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T
     new CoProduct18(adtCv.value)
 }
 
-trait CoProductApply19[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19]
-    extends CoProductApplyHelper19[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct19Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19]
+    extends CoProduct19ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -2077,9 +2077,9 @@ trait CoProductApply19[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T
     new CoProduct19(adtCv.value)
 }
 
-trait CoProductApply20[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20]
-    extends CoProductApplyHelper20[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct20Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20]
+    extends CoProduct20ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -2288,9 +2288,9 @@ trait CoProductApply20[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T
     new CoProduct20(adtCv.value)
 }
 
-trait CoProductApply21[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21]
-    extends CoProductApplyHelper21[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21] { Self =>
-  def target[Target](target: Target)(implicit
+trait CoProduct21Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21]
+    extends CoProduct21ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21] { Self =>
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],
@@ -2509,10 +2509,10 @@ trait CoProductApply21[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T
     new CoProduct21(adtCv.value)
 }
 
-trait CoProductApply22[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22]
-    extends CoProductApplyHelper22[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22] {
+trait CoProduct22Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22]
+    extends CoProduct22ApplyHelper[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22] {
   Self =>
-  def target[Target](target: Target)(implicit
+  def instance[Target](target: Target)(implicit
     adtCv: ADTValue[
       Successor[
         AdtFunction[Target, T1],

@@ -15,7 +15,9 @@ lazy val adt = crossProject(JSPlatform, JVMPlatform)
     publishTo          := localStaging.value,
     name               := "simple-adt",
     libraryDependencies ++= libScalax.`scalatest`.value.map(_ % Test),
-    libraryDependencies ++= libScalax.`simple-induction`.value
+    libraryDependencies ++= libScalax.`simple-induction`.value,
+    libraryDependencies ++= libScalax.`zio2`.value,
+    testFrameworks ++= Seq(new TestFramework("zio.test.sbt.ZTestFramework")),useKindProjector
   )
   .settings(sonaSettings *)
 

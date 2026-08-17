@@ -11,7 +11,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper1[T1 ] {
+    trait CoProduct1ApplyHelper[T1 ] {
         
 
         def instance1(t: T1): CoProduct1[T1 ] =
@@ -24,7 +24,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper2[T1  ,T2 ] {
+    trait CoProduct2ApplyHelper[T1  ,T2 ] {
         
             def instance1(t: T1): CoProduct2[T1  ,T2 ] =
                 new CoProduct2[T1  ,T2 ](
@@ -48,7 +48,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper3[T1  ,T2  ,T3 ] {
+    trait CoProduct3ApplyHelper[T1  ,T2  ,T3 ] {
         
             def instance1(t: T1): CoProduct3[T1  ,T2  ,T3 ] =
                 new CoProduct3[T1  ,T2  ,T3 ](
@@ -87,7 +87,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper4[T1  ,T2  ,T3  ,T4 ] {
+    trait CoProduct4ApplyHelper[T1  ,T2  ,T3  ,T4 ] {
         
             def instance1(t: T1): CoProduct4[T1  ,T2  ,T3  ,T4 ] =
                 new CoProduct4[T1  ,T2  ,T3  ,T4 ](
@@ -145,7 +145,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper5[T1  ,T2  ,T3  ,T4  ,T5 ] {
+    trait CoProduct5ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5 ] {
         
             def instance1(t: T1): CoProduct5[T1  ,T2  ,T3  ,T4  ,T5 ] =
                 new CoProduct5[T1  ,T2  ,T3  ,T4  ,T5 ](
@@ -226,7 +226,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper6[T1  ,T2  ,T3  ,T4  ,T5  ,T6 ] {
+    trait CoProduct6ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6 ] {
         
             def instance1(t: T1): CoProduct6[T1  ,T2  ,T3  ,T4  ,T5  ,T6 ] =
                 new CoProduct6[T1  ,T2  ,T3  ,T4  ,T5  ,T6 ](
@@ -334,7 +334,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper7[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7 ] {
+    trait CoProduct7ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7 ] {
         
             def instance1(t: T1): CoProduct7[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7 ] =
                 new CoProduct7[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7 ](
@@ -473,7 +473,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper8[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8 ] {
+    trait CoProduct8ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8 ] {
         
             def instance1(t: T1): CoProduct8[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8 ] =
                 new CoProduct8[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8 ](
@@ -647,7 +647,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper9[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9 ] {
+    trait CoProduct9ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9 ] {
         
             def instance1(t: T1): CoProduct9[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9 ] =
                 new CoProduct9[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9 ](
@@ -860,7 +860,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper10[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10 ] {
+    trait CoProduct10ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10 ] {
         
             def instance1(t: T1): CoProduct10[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10 ] =
                 new CoProduct10[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10 ](
@@ -1116,7 +1116,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper11[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11 ] {
+    trait CoProduct11ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11 ] {
         
             def instance1(t: T1): CoProduct11[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11 ] =
                 new CoProduct11[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11 ](
@@ -1419,7 +1419,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper12[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12 ] {
+    trait CoProduct12ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12 ] {
         
             def instance1(t: T1): CoProduct12[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12 ] =
                 new CoProduct12[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12 ](
@@ -1773,7 +1773,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper13[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13 ] {
+    trait CoProduct13ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13 ] {
         
             def instance1(t: T1): CoProduct13[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13 ] =
                 new CoProduct13[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13 ](
@@ -2182,7 +2182,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper14[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14 ] {
+    trait CoProduct14ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14 ] {
         
             def instance1(t: T1): CoProduct14[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14 ] =
                 new CoProduct14[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14 ](
@@ -2650,7 +2650,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper15[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15 ] {
+    trait CoProduct15ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15 ] {
         
             def instance1(t: T1): CoProduct15[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15 ] =
                 new CoProduct15[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15 ](
@@ -3181,7 +3181,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper16[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16 ] {
+    trait CoProduct16ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16 ] {
         
             def instance1(t: T1): CoProduct16[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16 ] =
                 new CoProduct16[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16 ](
@@ -3779,7 +3779,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper17[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17 ] {
+    trait CoProduct17ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17 ] {
         
             def instance1(t: T1): CoProduct17[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17 ] =
                 new CoProduct17[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17 ](
@@ -4448,7 +4448,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper18[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18 ] {
+    trait CoProduct18ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18 ] {
         
             def instance1(t: T1): CoProduct18[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18 ] =
                 new CoProduct18[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18 ](
@@ -5192,7 +5192,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper19[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19 ] {
+    trait CoProduct19ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19 ] {
         
             def instance1(t: T1): CoProduct19[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19 ] =
                 new CoProduct19[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19 ](
@@ -6015,7 +6015,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper20[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20 ] {
+    trait CoProduct20ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20 ] {
         
             def instance1(t: T1): CoProduct20[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20 ] =
                 new CoProduct20[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20 ](
@@ -6921,7 +6921,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper21[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20  ,T21 ] {
+    trait CoProduct21ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20  ,T21 ] {
         
             def instance1(t: T1): CoProduct21[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20  ,T21 ] =
                 new CoProduct21[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20  ,T21 ](
@@ -7914,7 +7914,7 @@ import typedadt._
 
 
 
-    trait CoProductApplyHelper22[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20  ,T21  ,T22 ] {
+    trait CoProduct22ApplyHelper[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20  ,T21  ,T22 ] {
         
             def instance1(t: T1): CoProduct22[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20  ,T21  ,T22 ] =
                 new CoProduct22[T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10  ,T11  ,T12  ,T13  ,T14  ,T15  ,T16  ,T17  ,T18  ,T19  ,T20  ,T21  ,T22 ](

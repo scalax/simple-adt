@@ -9,6 +9,12 @@ class CoProduct1[T1](foldImpl: One[T1]) extends One[T1] with ADTFoldApplyImpl1[N
   @inline override def fold1[TargetOther0](param1: T1 => TargetOther0): TargetOther0 = CoProductSelf.fold[TargetOther0](param1)
 }
 
+object CoProduct1 {
+  def apply[T1]: CoProduct1Apply[T1] = new CoProduct1Apply[T1] {
+    //
+  }
+}
+
 class CoProduct2[T1, T2](
   instance: Successor[
     T1,
@@ -47,6 +53,13 @@ class CoProduct2[T1, T2](
 
   }
 
+}
+
+object CoProduct2 {
+  def apply[T1, T2]: CoProduct2Apply[T1, T2] =
+    new CoProduct2Apply[T1, T2] {
+      //
+    }
 }
 
 class CoProduct3[T1, T2, T3](
@@ -111,6 +124,13 @@ class CoProduct3[T1, T2, T3](
 
   }
 
+}
+
+object CoProduct3 {
+  def apply[T1, T2, T3]: CoProduct3Apply[T1, T2, T3] =
+    new CoProduct3Apply[T1, T2, T3] {
+      //
+    }
 }
 
 class CoProduct4[T1, T2, T3, T4](
@@ -196,6 +216,13 @@ class CoProduct4[T1, T2, T3, T4](
 
   }
 
+}
+
+object CoProduct4 {
+  def apply[T1, T2, T3, T4]: CoProduct4Apply[T1, T2, T3, T4] =
+    new CoProduct4Apply[T1, T2, T3, T4] {
+      //
+    }
 }
 
 class CoProduct5[T1, T2, T3, T4, T5](
@@ -302,6 +329,13 @@ class CoProduct5[T1, T2, T3, T4, T5](
 
   }
 
+}
+
+object CoProduct5 {
+  def apply[T1, T2, T3, T4, T5]: CoProduct5Apply[T1, T2, T3, T4, T5] =
+    new CoProduct5Apply[T1, T2, T3, T4, T5] {
+      //
+    }
 }
 
 class CoProduct6[T1, T2, T3, T4, T5, T6](
@@ -436,6 +470,13 @@ class CoProduct6[T1, T2, T3, T4, T5, T6](
 
   }
 
+}
+
+object CoProduct6 {
+  def apply[T1, T2, T3, T4, T5, T6]: CoProduct6Apply[T1, T2, T3, T4, T5, T6] =
+    new CoProduct6Apply[T1, T2, T3, T4, T5, T6] {
+      //
+    }
 }
 
 class CoProduct7[T1, T2, T3, T4, T5, T6, T7](
@@ -592,6 +633,13 @@ class CoProduct7[T1, T2, T3, T4, T5, T6, T7](
 
   }
 
+}
+
+object CoProduct7 {
+  def apply[T1, T2, T3, T4, T5, T6, T7]: CoProduct7Apply[T1, T2, T3, T4, T5, T6, T7] =
+    new CoProduct7Apply[T1, T2, T3, T4, T5, T6, T7] {
+      //
+    }
 }
 
 class CoProduct8[T1, T2, T3, T4, T5, T6, T7, T8](
@@ -770,6 +818,13 @@ class CoProduct8[T1, T2, T3, T4, T5, T6, T7, T8](
 
   }
 
+}
+
+object CoProduct8 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8]: CoProduct8Apply[T1, T2, T3, T4, T5, T6, T7, T8] =
+    new CoProduct8Apply[T1, T2, T3, T4, T5, T6, T7, T8] {
+      //
+    }
 }
 
 class CoProduct9[T1, T2, T3, T4, T5, T6, T7, T8, T9](
@@ -970,6 +1025,13 @@ class CoProduct9[T1, T2, T3, T4, T5, T6, T7, T8, T9](
 
   }
 
+}
+
+object CoProduct9 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9]: CoProduct9Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9] =
+    new CoProduct9Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9] {
+      //
+    }
 }
 
 class CoProduct10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
@@ -1192,6 +1254,13 @@ class CoProduct10[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10](
 
   }
 
+}
+
+object CoProduct10 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10]: CoProduct10Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10] =
+    new CoProduct10Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10] {
+      //
+    }
 }
 
 class CoProduct11[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11](
@@ -1437,6 +1506,13 @@ class CoProduct11[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11](
 
   }
 
+}
+
+object CoProduct11 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11]: CoProduct11Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11] =
+    new CoProduct11Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11] {
+      //
+    }
 }
 
 class CoProduct12[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12](
@@ -1722,6 +1798,13 @@ class CoProduct12[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12](
 
   }
 
+}
+
+object CoProduct12 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12]: CoProduct12Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12] =
+    new CoProduct12Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12] {
+      //
+    }
 }
 
 class CoProduct13[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13](
@@ -2046,6 +2129,14 @@ class CoProduct13[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13](
 
   }
 
+}
+
+object CoProduct13 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13]
+    : CoProduct13Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] =
+    new CoProduct13Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13] {
+      //
+    }
 }
 
 class CoProduct14[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14](
@@ -2397,6 +2488,14 @@ class CoProduct14[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14](
 
   }
 
+}
+
+object CoProduct14 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14]
+    : CoProduct14Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14] =
+    new CoProduct14Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14] {
+      //
+    }
 }
 
 class CoProduct15[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15](
@@ -2773,6 +2872,14 @@ class CoProduct15[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T
 
   }
 
+}
+
+object CoProduct15 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15]
+    : CoProduct15Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15] =
+    new CoProduct15Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15] {
+      //
+    }
 }
 
 class CoProduct16[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16](
@@ -3176,6 +3283,14 @@ class CoProduct16[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T
 
   }
 
+}
+
+object CoProduct16 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16]
+    : CoProduct16Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16] =
+    new CoProduct16Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16] {
+      //
+    }
 }
 
 class CoProduct17[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17](
@@ -3604,6 +3719,14 @@ class CoProduct17[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T
 
   }
 
+}
+
+object CoProduct17 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17]
+    : CoProduct17Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17] =
+    new CoProduct17Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17] {
+      //
+    }
 }
 
 class CoProduct18[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18](
@@ -4057,6 +4180,14 @@ class CoProduct18[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T
 
   }
 
+}
+
+object CoProduct18 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18]
+    : CoProduct18Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18] =
+    new CoProduct18Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18] {
+      //
+    }
 }
 
 class CoProduct19[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19](
@@ -4536,6 +4667,14 @@ class CoProduct19[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T
 
   }
 
+}
+
+object CoProduct19 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19]
+    : CoProduct19Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19] =
+    new CoProduct19Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19] {
+      //
+    }
 }
 
 class CoProduct20[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20](
@@ -5040,6 +5179,14 @@ class CoProduct20[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T
 
   }
 
+}
+
+object CoProduct20 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20]
+    : CoProduct20Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20] =
+    new CoProduct20Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20] {
+      //
+    }
 }
 
 class CoProduct21[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21](
@@ -5569,6 +5716,14 @@ class CoProduct21[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T
 
   }
 
+}
+
+object CoProduct21 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21]
+    : CoProduct21Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21] =
+    new CoProduct21Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21] {
+      //
+    }
 }
 
 class CoProduct22[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22](
@@ -6123,4 +6278,12 @@ class CoProduct22[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T
 
   }
 
+}
+
+object CoProduct22 {
+  def apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22]
+    : CoProduct22Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22] =
+    new CoProduct22Apply[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22] {
+      //
+    }
 }

@@ -23,7 +23,7 @@ import typedadt._
 
 @for(i1 <- 1 to TupleSize) {
 
-    trait CoProductApplyHelper@{i1}[T1 @for(i2 <- 2 to i1) { ,T@i2 }] {
+    trait CoProduct@{i1}ApplyHelper[T1 @for(i2 <- 2 to i1) { ,T@i2 }] {
         @for(i2 <- 1 to i1 - 1) {
             def instance@{i2}(t: T@{i2}): CoProduct@{i1}[T1 @for(i3 <- 2 to i1) { ,T@i3 }] =
                 new CoProduct@{i1}[T1 @for(i3 <- 2 to i1) { ,T@i3 }](@AppendFunc1(i2))

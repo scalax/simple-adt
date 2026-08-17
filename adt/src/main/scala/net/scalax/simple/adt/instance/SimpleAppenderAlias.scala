@@ -1,6 +1,5 @@
 package net.scalax.simple.adt
 package instance
-package support
 
 import net.scalax.simple.append.support.collectioncount22.typeparameter22.SimpleAppender
 
@@ -158,8 +157,10 @@ object SimpleAppenderAlias {
         Any,
         Any
       ] {
-    override def next[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22]
-      : AppenderAlias[M, Pro1, Pro2, AppendPro1, AppendPro2, AppendPro1[T1, ProInstance1], AppendPro2[T1, ProInstance2]]
+    final override def next[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22]
+      : AppenderAlias[M, Pro1, Pro2, AppendPro1, AppendPro2, AppendPro1[T1, ProInstance1], AppendPro2[T1, ProInstance2]] =
+      this.nextAlias[T1]
+    def nextAlias[T1]: AppenderAlias[M, Pro1, Pro2, AppendPro1, AppendPro2, AppendPro1[T1, ProInstance1], AppendPro2[T1, ProInstance2]]
   }
 
 }

@@ -11,6 +11,12 @@ class CoProduct1[T1](foldImpl: One[T1]) extends One[T1] with ADTFoldApplyImpl1[N
     @@inline override def fold1[TargetOther0](param1: T1 => TargetOther0): TargetOther0 = CoProductSelf.fold[TargetOther0](param1)
 }
 
+object CoProduct1 {
+    def apply[T1]: CoProduct1Apply[T1] = new CoProduct1Apply[T1] {
+        //
+    }
+}
+
 @TypeName1(i2: Int, sum: Int) = {
     @if(i2 < sum) {
         Successor[T@i2, @{TypeName1(i2 + 1, sum)}]
@@ -60,6 +66,13 @@ class CoProduct1[T1](foldImpl: One[T1]) extends One[T1] with ADTFoldApplyImpl1[N
             @FoldApply1(2, i1)
         }
 
+    }
+
+    object CoProduct@{i1} {
+        def apply[@for(i2 <- 1 to i1) { T@i2, }]: CoProduct@{i1}Apply[@for(i2 <- 1 to i1) { T@i2, }] =
+            new CoProduct@{i1}Apply[@for(i2 <- 1 to i1) { T@i2, }] {
+                //
+            }
     }
 
 }

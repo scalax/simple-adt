@@ -18,8 +18,18 @@ object CodegenAction {
       createFolders = true
     )
     os.write.over(
-      target = instanceRoot / s"CoProductApply.scala",
+      target = typedRoot / s"CoProductApply.scala",
       data = net.scalax.txt.CoProductApply(22).body,
+      createFolders = true
+    )
+    os.write.over(
+      target = typedRoot / s"package.scala",
+      data = net.scalax.txt.TypeAlias(22).body,
+      createFolders = true
+    )
+    os.write.over(
+      target = typedRoot / s"IndexOfX.scala",
+      data = net.scalax.txt.IndexOfX(22).body,
       createFolders = true
     )
   }

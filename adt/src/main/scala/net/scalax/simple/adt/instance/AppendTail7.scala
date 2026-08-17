@@ -1,8 +1,6 @@
 package net.scalax.simple.adt
 package instance
 
-import support.SimpleAppenderAlias
-
 object AppendTail7 {
 
   trait Ctx1[Target] {
@@ -16,8 +14,7 @@ object AppendTail7 {
           ProInstance1,
           ProInstance2
         ] { AppendAdtSelf =>
-      override def next[T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15, T16, T17, T18, T19, T20, T21, T22]
-        : ToTarget[AdtHList.UsePositive[T1 => Target, ProInstance1], Successor[T1, ProInstance2]] =
+      override def nextAlias[T1]: ToTarget[AdtHList.UsePositive[T1 => Target, ProInstance1], Successor[T1, ProInstance2]] =
         new ToTarget[AdtHList.UsePositive[T1 => Target, ProInstance1], Successor[T1, ProInstance2]] {
           override def current: (AdtHList.UsePositive[T1 => Target, ProInstance1], Successor[T1, ProInstance2]) => Target =
             (
@@ -35,10 +32,7 @@ object AppendTail7 {
 
       implicit def positiveImplicit[Item, ProInstance1 <: AdtHList, ProInstance2 <: AdtType](implicit
         tail: ToTarget[ProInstance1, ProInstance2]
-      ): ToTarget[AdtHList.UsePositive[Item => Target, ProInstance1], Successor[Item, ProInstance2]] =
-        tail
-          .next[Item, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any]
-          .asInstanceOf[ToTarget[AdtHList.UsePositive[Item => Target, ProInstance1], Successor[Item, ProInstance2]]]
+      ): ToTarget[AdtHList.UsePositive[Item => Target, ProInstance1], Successor[Item, ProInstance2]] = tail.nextAlias[Item]
 
       implicit def zeroImplicit[Item]: ToTarget[AdtHList.UsePositive[Item => Target, AdtHList], One[Item]] =
         new ToTarget[AdtHList.UsePositive[Item => Target, AdtHList], One[Item]] {
