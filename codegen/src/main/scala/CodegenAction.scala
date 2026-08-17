@@ -17,5 +17,10 @@ object CodegenAction {
       data = net.scalax.txt.CoProductApplyHelper(22).body,
       createFolders = true
     )
+    os.write.over(
+      target = instanceRoot / s"CoProductApply.scala",
+      data = net.scalax.txt.CoProductApply(22).body,
+      createFolders = true
+    )
   }
 }
