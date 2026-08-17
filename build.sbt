@@ -17,7 +17,8 @@ lazy val adt = crossProject(JSPlatform, JVMPlatform)
     libraryDependencies ++= libScalax.`scalatest`.value.map(_ % Test),
     libraryDependencies ++= libScalax.`simple-induction`.value,
     libraryDependencies ++= libScalax.`zio2`.value,
-    testFrameworks ++= Seq(new TestFramework("zio.test.sbt.ZTestFramework")),useKindProjector
+    testFrameworks ++= Seq(new TestFramework("zio.test.sbt.ZTestFramework")),
+    useKindProjector
   )
   .settings(sonaSettings *)
 
