@@ -1,5 +1,7 @@
 package net.scalax.simple.adt
-package instance
+package typedadt
+
+import instance._
 
 class CoProduct1[T1](foldImpl: One[T1]) extends One[T1] with ADTFoldApplyImpl1[Nothing, T1] { CoProductSelf =>
   override def value: T1                                                             = foldImpl.value
