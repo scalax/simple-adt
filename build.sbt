@@ -17,7 +17,6 @@ lazy val adt = crossProject(JSPlatform, JVMPlatform)
     libraryDependencies ++= libScalax.`scalatest`.value.map(_ % Test),
     libraryDependencies ++= libScalax.`simple-induction`.value,
     libraryDependencies ++= libScalax.`zio2`.value,
-    testFrameworks ++= Seq(new TestFramework("zio.test.sbt.ZTestFramework")),
     useKindProjector
   )
   .settings(sonaSettings *)
@@ -35,14 +34,14 @@ lazy val sonaSettings: Seq[Setting[?]] = List(
   organizationHomepage := Some(uri("https://github.com/scalax")),
   scmInfo              := Some(
     ScmInfo(
-      uri("https://github.com/scalax/simple-induction"),
-      "scm:git@github.com:scalax/simple-induction.git"
+      uri("https://github.com/scalax/simple-adt"),
+      "scm:git@github.com:scalax/simple-adt.git"
     )
   ),
   developers           := List(developer1),
   description          := "Simple, and scalable. Use it to subvert the author's imagination.",
-  licenses             := List(License("MIT License", uri("https://github.com/scalax/simple/blob/main/LICENSE"))),
-  homepage             := Some(uri("https://github.com/scalax/simple")),
+  licenses             := List(License("MIT License", uri("https://github.com/scalax/simple-adt/blob/main/LICENSE"))),
+  homepage             := Some(uri("https://github.com/scalax/simple-adt")),
   pomIncludeRepository := { _ => false },
   publishMavenStyle    := true,
   versionScheme        := Some("early-semver")
