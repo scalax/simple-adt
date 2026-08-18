@@ -9,7 +9,7 @@ import matchers._
 /** @author
   *   djx314
   */
-object TestCase2 extends AnyFlatSpec with should.Matchers {
+class TestCase2 extends AnyFlatSpec with should.Matchers {
 
   case class TempForData(typeName: String, value: Option[Int])
   def inputAdtData(
@@ -37,36 +37,4 @@ object TestCase2 extends AnyFlatSpec with should.Matchers {
     foldData3 should be(TempForData("Option", Some(2 + 2)))
   }
 
-  /*override def spec: Spec[TestEnvironment with Scope, Any] = suite("Test case created by djx314-1")(
-    test("Simple adt fold in test data.") {
-      val baseValue = 2
-
-      def asserts = TestResult.allSuccesses(
-        {
-
-          val data     = None
-          val foldData = inputAdtData(_.instance(data))
-          assert(foldData)(Assertion.equalTo(TempForData("None", data)))
-
-        }, {
-
-          val data     = Option(baseValue)
-          val foldData = inputAdtData(_.instance(data))
-          assert(foldData)(Assertion.equalTo(TempForData("Option", Option(baseValue + 2))))
-
-        }, {
-
-          val data     = Some(baseValue)
-          val foldData = inputAdtData(_.instance(data))
-          assert(foldData)(Assertion.equalTo(TempForData("Some", Some(baseValue + 1))))
-
-        }
-      )
-
-      try asserts
-      catch {
-        case _: StackOverflowError => assertNever("Not allow adt access.")
-      }
-    }
-  )*/
 }

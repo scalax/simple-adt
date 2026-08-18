@@ -220,14 +220,14 @@ object `Test Cases copy from documention in README.md` {
 
 }
 
-import zio._
-import zio.test._
-import zio.test.Assertion._
-object ZioTestCaseForDoc extends ZIOSpecDefault {
+import org.scalatest._
+import flatspec._
+import matchers._
 
-  override def spec: Spec[TestEnvironment with Scope, Any] = suite("Test case for doc in README.md")(
-    test("Confirm Doc") {
-      assert(`Test Cases copy from documention in README.md`)(Assertion.equalTo(`Test Cases copy from documention in README.md`))
-    }
-  )
+class DocTest extends AnyFlatSpec with should.Matchers {
+
+  "Test case for doc in README.md" should "Confirm Doc" in {
+    `Test Cases copy from documention in README.md`
+  }
+
 }
