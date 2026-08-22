@@ -11,7 +11,6 @@ lazy val adt = crossProject(JSPlatform, JVMPlatform)
     scalaVersion       := scalaV.v213,
     crossScalaVersions := Seq(scalaV.v212, scalaV.v213, scalaV.v3),
     scalafmtOnCompile  := true,
-    version            := "0.0.1-M27",
     publishTo          := localStaging.value,
     name               := "simple-adt",
     libraryDependencies ++= libScalax.`scalatest`.value.map(_ % Test),
@@ -19,37 +18,3 @@ lazy val adt = crossProject(JSPlatform, JVMPlatform)
     libraryDependencies ++= libScalax.`zio2`.value,
     useKindProjector
   )
-  .settings(sonaSettings *)
-
-lazy val developer1 = Developer(
-  id = "Mars Liu",
-  name = "Liu Xin",
-  email = "mars.liu@outlook.com",
-  url = uri("https://marchliu.github.io/")
-)
-
-lazy val developer2 = Developer(
-  id = "djx314",
-  name = "djx314",
-  email = "djx314@sina.cn",
-  url = uri("https://github.com/djx314")
-)
-
-lazy val sonaSettings: Seq[Setting[?]] = List(
-  organization         := "net.scalax.simple",
-  organizationName     := "Scalax",
-  organizationHomepage := Some(uri("https://github.com/scalax")),
-  scmInfo              := Some(
-    ScmInfo(
-      uri("https://github.com/scalax/simple-adt"),
-      "scm:git@github.com:scalax/simple-adt.git"
-    )
-  ),
-  developers           := List(developer1, developer2),
-  description          := "Simple, and scalable. Use it to subvert the author's imagination.",
-  licenses             := List(License("MIT License", uri("https://github.com/scalax/simple-adt/blob/main/LICENSE"))),
-  homepage             := Some(uri("https://github.com/scalax/simple-adt")),
-  pomIncludeRepository := { _ => false },
-  publishMavenStyle    := true,
-  versionScheme        := Some("early-semver")
-)
