@@ -22,6 +22,13 @@ lazy val adt = crossProject(JSPlatform, JVMPlatform)
   .settings(sonaSettings *)
 
 lazy val developer1 = Developer(
+  id = "Mars Liu",
+  name = "Liu Xin",
+  email = "mars.liu@outlook.com",
+  url = uri("https://marchliu.github.io/")
+)
+
+lazy val developer2 = Developer(
   id = "djx314",
   name = "djx314",
   email = "djx314@sina.cn",
@@ -38,7 +45,7 @@ lazy val sonaSettings: Seq[Setting[?]] = List(
       "scm:git@github.com:scalax/simple-adt.git"
     )
   ),
-  developers           := List(developer1),
+  developers           := List(developer1, developer2),
   description          := "Simple, and scalable. Use it to subvert the author's imagination.",
   licenses             := List(License("MIT License", uri("https://github.com/scalax/simple-adt/blob/main/LICENSE"))),
   homepage             := Some(uri("https://github.com/scalax/simple-adt")),
