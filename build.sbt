@@ -15,6 +15,6 @@ lazy val adt = crossProject(JSPlatform, JVMPlatform)
     name               := "simple-adt",
     libraryDependencies ++= libScalax.`scalatest`.value.map(_ % Test),
     libraryDependencies ++= libScalax.`simple-induction`.value,
-    libraryDependencies ++= libScalax.`zio2`.value,
+    libraryDependencies ++= libScalax.`scala-collection-compat`.value,
     useKindProjector
   )
