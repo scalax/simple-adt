@@ -12,7 +12,7 @@ lazy val developer2 = Developer(
   url = uri("https://github.com/djx314")
 )
 
-ThisBuild / version              := "0.0.1-M28"
+ThisBuild / version              := "0.0.2-M29"
 ThisBuild / organization         := "net.scalax.simple"
 ThisBuild / organizationName     := "Scalax"
 ThisBuild / organizationHomepage := Some(uri("https://github.com/scalax"))
