@@ -34,7 +34,30 @@ object AppendTail7 {
       implicit def positiveImplicit[Item, ProInstance1 <: AdtHList, ProInstance2 <: AdtType](implicit
         tail: ToTarget[ProInstance1, ProInstance2]
       ): ToTarget[AdtHList.UsePositive[Item => Target, ProInstance1], Successor[Item, ProInstance2]] =
-        tail.next[Item, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any, Any]
+        tail.next[
+          Item,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing,
+          Nothing
+        ]
 
       implicit def zeroImplicit[Item]: ToTarget[AdtHList.UsePositive[Item => Target, AdtHList], One[Item]] =
         new ToTarget[AdtHList.UsePositive[Item => Target, AdtHList], One[Item]] {
